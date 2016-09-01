@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<!-- reset.css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- animate.css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<!-- =======================  Begin Body  ====================== -->
+<body>
+<!-- splash screen to begin game will go here  -->
+
+<!-- main game play page container all content goes inside -->
+<div class="container-fluid">
+
+<!-- ======================== JumboTron  ========================-->
+	<div class="jumbotron">
+		<h2 style="text-align:center;">Crystal Collector Game</h2>
+	</div>
+	
+ 	<div class="row">
+		<div class="panel panel-heading">
+			<h2 class="panel-title">Press a crystal and see if you can match the wizard</h2>
+		</div>
+	</div>
+		
+<!-- ======================  Score Board  ====================== -->
+	<div class="row">
+	  <div class="container col-lg-6">
+		<div class="panel-body " id="wizardDiv">
+			<h2 id="" style="text-align:center;">Wizards #: <span id="computerScore"></span></h2>
+		</div>
+	  </div>
+	  <div class="container col-lg-6">
+		<div class="panel-body" id="playerDiv">
+			<h2 id="" style="text-align:center;">your score: <span id="playerScore"></span></h2>
+		</div>
+	  </div>
+	</div>
+<!-- =======================  Game Play  ======================= -->
+	<div class="row">
+	  <div class="container col-md-3">
+		<div class="panel-body game-click">
+			<h2>Jewel of Hope</h2>
+			<img class="img-responsive center-block game-jewel"  id="jewelHope" src="assets/images/topaz-icon.png" alt="">
+		</div>
+	  </div>
+	  <div class="container col-md-3">
+		<div class="panel-body game-click">
+			<h2>Jewel of Desire</h2>
+			<img class="img-responsive center-block game-jewel" id="jewelDesire" src="assets/images/diamond-icon.png" alt="">
+		</div>
+	  </div>
+	  <div class="container col-md-3">
+		<div class="panel-body game-click">
+			<h2>Jewel of Peace</h2>
+			<img class="img-responsive center-block game-jewel" id="jewelPeace" src="assets/images/yellow-icon.png" alt="">
+		</div>
+	  </div>
+	  <div class="container col-md-3">
+		<div class="panel-body game-click">
+			<h2>Jewel of Passion</h2>
+			<img class="img-responsive center-block game-jewel" 
+			id="jewelPassion" src="assets/images/ruby-icon.png" alt="">
+		</div
+	  </div>
+	</div>
+
+<!--====================== Games won panel  =====================-->
+	<div class="container-fluid col-md-6" >
+		<div class="panel panel-default counter-win">
+		  <div class="panel-heading">
+		    	<h3 class="panel-title text-center">Games Won</h3>
+		  </div>
+		  <div class="panel-body">
+			  <div class="text-center">
+				    <span id="gamesWon"></span>
+			  </div>
+		  </div>
+		</div>
+	</div>	
+<!--======================= games lost panel ====================-->
+
+	<div class="container-fluid col-md-6" >
+		<div class="panel panel-default counter-loss">
+		  <div class="panel-heading">
+		    	<h3 class="panel-title text-center">Games Lost</h3>
+		  </div>
+		  <div class="panel-body">
+			  <div class="text-center">
+				    <span id="gamesLost"></span>
+			  </div>
+		  </div>
+		</div>
+	</div>
+</div>	
+</div> <!-- <line 14 container-fluid"> -->
+<!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/*style.css*/
+
+/*===================style section for responsive background===================================*/
+	
+
+	h1, h2, h3 {
+		text-align:center
+	} 
+
+	.paneltitle {
+		text-align:center;
+	}
+
+	#wizardDiv, #playerDiv {
+		background-color: lightblue; 
+		border: solid grey 3px; 
+		height: 250px; 
+		margin-bottom: 20px;
+	}
+
+	.game-click {
+		height: 200px;
+		background-color: pink;
+		padding-bottom: 15px;
+	}
+	
+	.game-jewel {
+		height: 70%;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-delay: 0.3s;
+		-webkit-animation-iteration-count: 2s;
+	}
+
+	.counter-win {
+	
+		margin-top: 20px;
+	}
+	.counter-loss {
+	
+		margin-top: 20px;
+	}
+	#gamesLost {
+		font-size: 16px;
+	}
+
+	#gamesWon {
+		font-size: 16px;
+	}
